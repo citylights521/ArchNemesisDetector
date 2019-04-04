@@ -22,6 +22,30 @@
 // }
 // ```
 
+module.exports.surveyResults = [
+    {
+      routeName: "yoda",
+      name: "Yoda",
+      role: "Jedi Master",
+      age: 900,
+      forcePoints: 2000
+    },
+    {
+      routeName: "darthmaul",
+      name: "Darth Maul",
+      role: "Sith Lord",
+      age: 200,
+      forcePoints: 1200
+    },
+    {
+      routeName: "obiwankenobi",
+      name: "Obi Wan Kenobi",
+      role: "Jedi Master",
+      age: 55,
+      forcePoints: 1350
+    }
+  ];
+
 // 6. Determine the user's most compatible friend using the following as a guide:
 
 //    * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).

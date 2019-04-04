@@ -1,6 +1,7 @@
 // Dependencies
 // ========================================================
 var express = require("express");
+var path = require("path");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
@@ -9,19 +10,18 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//go to the root html page
-app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname, 'home.html'));
-})
+//loads apiRoutes.js module and passes the app, path, and the current running directory 
+var apiRoutes = require("./app/routing/apiRoutes.js")(app, path, __dirname);
+
+//loads htmlRoutes.js module and passes the app, path, and the current running directory 
+var htmlRoutes = require("./app/routing/htmlRoutes.js")(app, path, __dirname);
+
 // Data
 // ========================================================
 
 
 
 
-
-// Routes
-// ========================================================
 
 
 
