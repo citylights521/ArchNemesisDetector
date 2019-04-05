@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Arch Nemesis Detector</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <div class="jumbotron">
             <h1 class="text-center"><span class="glyphicon glyphicon-user"></span> Arch Nemesis Detector</h1>
-            <hr>
             <h2 class="text-center">Answer a few questions to learn who your arch nemesis is.</h2>
             <br>
             <div class="text-center">
-                <a href="./survey"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Take Survey</button></a>
+                <a href="./survey"><button type="button" class="btn btn-lg btn-primary"><span
+                            class="glyphicon glyphicon-list-alt"></span> Take Survey</button></a>
             </div>
         </div>
 
+        <!-- TODO: fix background image -->
+        <style type="text/css">
+            .jumbotron {
+                margin-top: 20px;
+                background-image: url("./images/arm-wrestling-bar-bet-4417.jpg");
+                background-size: cover;
+            }
+        </style>
 
-<!-- footer at the bootom on the page; don't change-->
-    <footer class="footer">
-      <div class="container">
-            <p><a href="/api/view.html">API Arch Nemesis List</a> | <a href="/api/waitlist.html">GitHub Repo</a></p>
-      </div>
-    </footer>
+        <!-- footer at the bootom on the page; don't change-->
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/nemesis" target="_blank">API Arch Nemesis List</a> | <a
+                        href="https://github.com/citylights521/ArchNemesisDetector" target="_blank">GitHub Repo</a></p>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
