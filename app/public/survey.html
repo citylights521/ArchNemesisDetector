@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <title>Arch Nemesis Detector</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-center">Survey Questions</h1>
+                <h1 class="text-center survTitle">Survey Questions</h1>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form>
+                <form autocomplete="off">
                     <div class="form-group">
                         <div>
                             <h3><strong>About You</strong></h3>
@@ -48,7 +49,7 @@
                             <h4>You are always thinking of your next plot to take over the world.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -65,7 +66,7 @@
                             <h4>Your favorite pastime is stealing candy from babies.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -82,7 +83,7 @@
                             <h4>Doing nice things for others gives you the warm and fuzzy’s.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -99,7 +100,7 @@
                             <h4>Singing in the shower isn’t something anyone should do.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -116,7 +117,7 @@
                             <h4>Your current state of mind is: peaceful.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -133,7 +134,7 @@
                             <h4>There is a well-founded rumor that you have a secrete lair.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -150,7 +151,7 @@
                             <h4>Your car could give James Bonds a run for its money.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -167,7 +168,7 @@
                             <h4>You like to spend your weekends at home.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -184,7 +185,7 @@
                             <h4>You like to spend your weekends jet setting and finding adventure.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -201,7 +202,7 @@
                             <h4>I’ll take the 5 star pad thai.</h4>
                         </div>
                         <select required class="custom-select userScore">
-                            <option selected>Select an Option</option>
+                            <option value="0" selected>Select an Option</option>
                             <option value="1">1 (Strongly Disagree)</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -209,17 +210,45 @@
                             <option value="5">5 (Strongly Agree)</option>
                         </select>
                     </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block glyphicon glyphicon-save" id="add-btn">
+                        Submit</button>
+                    </form>
             </div>
         </div>
-        <br>
-        <button type="submit" class="btn btn-primary btn-lg btn-block glyphicon glyphicon-save" id="add-btn">
-            Submit</button>
-        </form>
+       
 
     </div>
     <hr>
+<style type="text/css">
+.survTitle {
+    font-family: 'Dokdo', cursive;
+    font-size: 60px;
+}
 
-    <!-- TODO: Add modal to show arch nemesis match -->
+h3 {
+    font-family: 'Dokdo', cursive;
+    font-size: 40px;
+}
+</style>
+
+    <!--Modal to show arch nemesis match -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Your Arch Nemesis is:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="modalName"></h2>
+                    <img style="width:100%" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer at the bootom on the page; don't change-->
     <footer class="footer">
@@ -228,55 +257,82 @@
                     href="https://github.com/citylights521/ArchNemesisDetector" target="_blank">GitHub Repo</a></p>
         </div>
     </footer>
-    </div>
+   
 
     <!-- this captures the users score and creates an object that we will post in archNemesis.js -->
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script type="text/javascript">
-        // Question: What does this code do?
+
+        $("")
+
         $("#survey").submit(function (event) {
             event.preventDefault();
 
             var userScores = $(".userScore")
-            console.log(userScores);
 
-            // for (let i = 0; i < userScores.length; i++) {
-            //     console.log(userScores[i].value);
 
-            // }
-
-            var showScore = $.map(userScores, function(score) {
+            // userScore is an array of select elements, meaning that the users score as created below will be in an array
+            var showScore = $.map(userScores, function (score) {
                 return score.value;
             });
 
-
+            //creates new nemesis object
             var newNemesis = {
                 name: $("#name").val().trim(),
                 photo: $("#photo").val().trim(),
                 scores: showScore
             };
 
+            if (newNemesis.name == "")
+            {
+                // error;
+                showError();
+                return;
+            }
 
-            
+            if (newNemesis.photo == "" || !newNemesis.photo.match(/\.(jpeg|jpg|gif|png)$/))
+            {
+                // error;
+                showError();
+                return;
+            }
 
+            for (var i = 0; i < newNemesis.scores.length; i++)
+            {
+                if (newNemesis.scores[i] == 0)
+                {
+                    // error
+                    showError();
+                    return;
+                }
+            }
 
-
-            // $.ajax({
-            //   method: "POST",
-            //   url: '/api/characters',
-            //   data: newCharacter
-            // })
-
-            // post user name, photo, and scores to archNemesis.js (to the server)
-
+            // calls server to post user name, photo, and scores to archNemesis.js (to the server)
             $.post("/api/nemesis", newNemesis)
                 .then(function (data) {
-                    $("archNemesis.js").append
-                    console.log("add.html", data);
+                    var yourNemesis = data;
+
+                    $("#modalTitle").text("Your Arch Nemesis is:");
+                    $("#modalName").text(yourNemesis.name);
+                    $("#modalImage").attr("src", yourNemesis.photo);
+                    $("#modal").modal("show");
+
+                    $("#name").val("");
+                    $("#photo").val("");
+                    $(".userScore").val(0);
 
                 });
-
         });
+
+        function showError(){
+            $("#modalTitle").text("Error!");
+            $("#modalName").text("Please answer all questions!");
+            $("#modalImage").attr("src", "./images/mistake-3085712_960_720.jpg");
+            $("#modal").modal("show");
+        }
     </script>
 
 

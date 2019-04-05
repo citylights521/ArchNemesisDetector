@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <title>Arch Nemesis Detector</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="text-center"><span class="glyphicon glyphicon-user"></span> Arch Nemesis Detector</h1>
-            <h2 class="text-center">Answer a few questions to learn who your arch nemesis is.</h2>
+            <h1 class="text-center title"><span class="glyphicon glyphicon-user"></span> Arch Nemesis Detector</h1>
             <br>
+            <h2 class="text-center subTitle">Take this quick survey to find out who your arch nemesis is.</h2>
             <div class="text-center">
+                <br>
                 <a href="./survey"><button type="button" class="btn btn-lg btn-primary"><span
                             class="glyphicon glyphicon-list-alt"></span> Take Survey</button></a>
             </div>
@@ -24,9 +26,21 @@
         <!-- TODO: fix background image -->
         <style type="text/css">
             .jumbotron {
-                margin-top: 20px;
-                background-image: url("./images/arm-wrestling-bar-bet-4417.jpg");
+                margin-top: 30px;
+                height: 800px;
+                background-image: url("./images/tumblr_n6pfgtcLGa1qbtwyto1_500.gif");
                 background-size: cover;
+                background-position-y: 30%;                
+            }
+
+            .title {
+                font-family: 'Dokdo', cursive;
+                font-size: 80px;
+            }
+
+            .subTitle {
+                font-family: 'Dokdo', cursive;
+                font-size: 40px;
             }
         </style>
 
