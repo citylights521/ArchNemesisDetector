@@ -30,7 +30,7 @@
                             placeholder="your name">
                     </div>
                     <div class="form-group">
-                        <label for="userimage">Image Link</label>
+                        <label for="userimage">Image Link (Required)</label>
                         <input type="text" class="form-control" id="photo" placeholder="your image link">
                     </div>
                 </form>
@@ -211,7 +211,7 @@
                         </select>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary btn-lg btn-block glyphicon glyphicon-save" id="add-btn">
+                    <button type="submit" class="btn btn-info btn-lg btn-block glyphicon glyphicon-save" id="add-btn">
                         Submit</button>
                     </form>
             </div>
@@ -264,8 +264,9 @@ h3 {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
 
+    <script type="text/javascript">
+    
         $("")
 
         $("#survey").submit(function (event) {
@@ -335,7 +336,11 @@ h3 {
         }
     </script>
 
-
+<style type="text/css">
+  body {
+            background-color: rgba(232, 241, 64, 0.51);
+        }
+</style>
 
 </body>
 
