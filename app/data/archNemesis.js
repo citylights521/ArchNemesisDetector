@@ -1,4 +1,4 @@
-// application's data as an array of objects
+//user data as an array of objects
 module.exports.surveyResults = [
     {
         "name": "Ursula",

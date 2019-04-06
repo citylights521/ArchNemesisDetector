@@ -1,6 +1,3 @@
-
-
-
 //exports module function for sever calls
 module.exports = function (app, path, rootPath) {
     //GET Route to `/survey` which should display the survey page.
@@ -13,4 +10,3 @@ module.exports = function (app, path, rootPath) {
         res.sendFile(path.join(rootPath, 'app/public/home.html'));
     });
 };
-

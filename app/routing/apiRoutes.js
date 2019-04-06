@@ -1,4 +1,5 @@
 
+//requires archnemesis.js
 var archNemesis = require("../data/archNemesis.js");
 console.log("api routes loaded");
 
@@ -20,9 +21,7 @@ module.exports = function (app, path, rootPath) {
         var prevTotalDifference = 0;
         for (let i = 0; i < archNemesis.surveyResults.length; i++) {
             const currentNem = archNemesis.surveyResults[i];
-            
             var currentNemScores = currentNem.scores;
-
             if (currentNemScores.length != newNemesisScores.length)
             {
                 throw "Nemesis data is not comprable";
@@ -33,18 +32,14 @@ module.exports = function (app, path, rootPath) {
             for (let j = 0; j < currentNemScores.length; j++) {
                 const currentNemScore = currentNemScores[j];
                 var currentNewNemScore = newNemesisScores[j];
-
                 totalDifference += Math.abs(currentNemScore - currentNewNemScore);
             }
-
             if (totalDifference > prevTotalDifference)
             {
                 nemIndex = i;
             }
-
             prevTotalDifference = totalDifference;
         }
-
 
         //pushes users survey results into the survey results array as can be viewed at /api/nemesis
         archNemesis.surveyResults.push(newNemesis);

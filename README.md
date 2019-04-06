@@ -1,17 +1,10 @@
-# ArchNemesisDetector
-Sponge Bob has Squidward. Batman has the Joker. Every hero has an arch nemesis (yes, Sponge Bob is a hero). 
+# Arch Nemesis Detector
+Sponge Bob has Squidward. Batman has the Joker. Every hero has an arch nemesis (and yes, Sponge Bob is a hero). 
 
 Be a hero yourself; find out who your arch nemesis is with the Arch Nemesis Detector!
 
-## How to Use TODO: double check how this will actually work from the users perspective and update this section accordingly
-The Arch Nemesis Detector is a full-stack site that takes in survey results from the user, and then compares their answers with those from other users. The app then displays the name and picture of the user with the most differentiating results from the current user, thus displaying their arch nemesis. As the user, you will need to do the following to use The Arch Nemesis Detector:
-
-Clone the repo from GitHub (actually have to do this, or can they just go straight to the page and interact with the site?)
-Run ‘npm install’ in you terminal (actually have to do this, or can they just go straight to the page and interact with the site?) –MAYBE add these notes for what to do if they want to manipulate the code?
-On the survey, input your name and share a valid image link. Then, go through and answer the provided questions on a scale of 1 (strongly disagree) to 5 (strongly agree). Hit submit to see the name and image of your Arch Nemesis. 
-
-## Video How To 
-TODO:FILL IN/ADD LINK
+## How to Use
+The Arch Nemesis Detector is a full-stack site that takes in survey results from the user, and then compares their answers with those from other users. The app then displays the name and picture of the user with the most differentiating results from the current user, thus displaying their arch nemesis. As the user, all you need to do is navigate to the survey, input your name and share a valid image link. Then, go through and answer the provided questions on a scale of 1 (strongly disagree) to 5 (strongly agree). Hit submit to see the name and image of your Arch Nemesis. 
 
 ## Heroku Link
 https://archnemesisdetector.herokuapp.com/
@@ -20,7 +13,7 @@ https://archnemesisdetector.herokuapp.com/
 https://github.com/citylights521/ArchNemesisDetector
 
 ## Components Used 
-* Express npm package
+* Express
 * HTML
 * JavaScript
 * CSS (within JavaScript)
@@ -28,11 +21,11 @@ https://github.com/citylights521/ArchNemesisDetector
 * Markdown
 * Goolge Fonts 
 * Pexels
-* Screencastify (video)
 * Visual Studio Code
 * Git Bash
 * GitHub
 * Heroku
+* Nodemon
 
 ## Author
 Claire Gibeau

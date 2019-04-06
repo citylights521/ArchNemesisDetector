@@ -1,3 +1,4 @@
+<!-- this pages code creates the survey page including styling, the form the user will fill out, and the functioning links and button -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,9 @@
     <meta charset="UTF-8">
     <title>Arch Nemesis Detector</title>
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
 </head>
 
 <body>
@@ -213,24 +214,23 @@
                     <br>
                     <button type="submit" class="btn btn-info btn-lg btn-block glyphicon glyphicon-save" id="add-btn">
                         Submit</button>
-                    </form>
+                </form>
             </div>
         </div>
-       
 
     </div>
     <hr>
-<style type="text/css">
-.survTitle {
-    font-family: 'Dokdo', cursive;
-    font-size: 60px;
-}
+    <style type="text/css">
+        .survTitle {
+            font-family: 'Dokdo', cursive;
+            font-size: 60px;
+        }
 
-h3 {
-    font-family: 'Dokdo', cursive;
-    font-size: 40px;
-}
-</style>
+        h3 {
+            font-family: 'Dokdo', cursive;
+            font-size: 40px;
+        }
+    </style>
 
     <!--Modal to show arch nemesis match -->
     <div class="modal fade" id="modal" tabindex="-1" role="dialog">
@@ -250,14 +250,13 @@ h3 {
         </div>
     </div>
 
-    <!-- footer at the bootom on the page; don't change-->
+    <!-- footer at the bootom on the page-->
     <footer class="footer">
         <div class="container">
             <p><a href="/api/nemesis" target="_blank">API Arch Nemesis List</a> | <a
                     href="https://github.com/citylights521/ArchNemesisDetector" target="_blank">GitHub Repo</a></p>
         </div>
     </footer>
-   
 
     <!-- this captures the users score and creates an object that we will post in archNemesis.js -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -266,14 +265,10 @@ h3 {
         crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-    
         $("")
-
         $("#survey").submit(function (event) {
             event.preventDefault();
-
             var userScores = $(".userScore")
-
 
             // userScore is an array of select elements, meaning that the users score as created below will be in an array
             var showScore = $.map(userScores, function (score) {
@@ -287,24 +282,20 @@ h3 {
                 scores: showScore
             };
 
-            if (newNemesis.name == "")
-            {
+            if (newNemesis.name == "") {
                 // error;
                 showError();
                 return;
             }
 
-            if (newNemesis.photo == "" || !newNemesis.photo.match(/\.(jpeg|jpg|gif|png)$/))
-            {
+            if (newNemesis.photo == "" || !newNemesis.photo.match(/\.(jpeg|jpg|gif|png)$/)) {
                 // error;
                 showError();
                 return;
             }
 
-            for (var i = 0; i < newNemesis.scores.length; i++)
-            {
-                if (newNemesis.scores[i] == 0)
-                {
+            for (var i = 0; i < newNemesis.scores.length; i++) {
+                if (newNemesis.scores[i] == 0) {
                     // error
                     showError();
                     return;
@@ -328,7 +319,7 @@ h3 {
                 });
         });
 
-        function showError(){
+        function showError() {
             $("#modalTitle").text("Error!");
             $("#modalName").text("Please answer all questions!");
             $("#modalImage").attr("src", "./images/mistake-3085712_960_720.jpg");
@@ -336,11 +327,11 @@ h3 {
         }
     </script>
 
-<style type="text/css">
-  body {
+    <style type="text/css">
+        body {
             background-color: rgba(232, 241, 64, 0.51);
         }
-</style>
+    </style>
 
 </body>
 
